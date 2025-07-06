@@ -1,12 +1,53 @@
-# React + Vite
+# Gym Scoreboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, interactive scoreboard for tracking gym attendance between two people.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **Interactive Score Cards** - Increment/decrement scores with smooth animations
+- ✅ **Auto-Save** - Scores automatically persist in browser localStorage
+- ✅ **CSV Export/Import** - Save and load scores as CSV files
+- ✅ **Responsive Design** - Works on desktop and mobile
+- ✅ **Modern UI** - Glassmorphism design with gradient backgrounds
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - UI framework
+- **Vite** - Build tool and dev server
+- **Framer Motion** - Smooth animations
+- **Lucide React** - Beautiful icons
+- **Pure CSS** - Custom styling (no CSS frameworks)
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Usage
+
+1. **Track Scores**: Use the up/down arrows to track attendance
+2. **Auto-Save**: Scores automatically save to browser storage
+3. **Export Data**: Click "Save to CSV" to download your progress
+4. **Import Data**: Click "Load from CSV" to restore previous scores
+
+## File Structure
+
+```
+scoreboard-ui/
+├── src/
+│   ├── App.jsx          # Main scoreboard component
+│   ├── index.css        # Global styles
+│   └── main.jsx         # React entry point
+├── public/
+│   └── vite.svg         # Vite logo
+├── package.json         # Dependencies
+└── README.md           # This file
+```

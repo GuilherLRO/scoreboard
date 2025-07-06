@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  scoreboard-ui:
+    build:
+      context: ./scoreboard-ui
+      dockerfile: Dockerfile
+    container_name: scoreboard-ui-container
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./scoreboard-ui:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
+    stdin_open: true
+    tty: true 
